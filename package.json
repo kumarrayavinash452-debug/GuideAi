@@ -1,0 +1,16 @@
+{
+  "name": "guideai",
+  "version": "1.0.0",
+  "description": "Guide AI - Floating AI Desktop Assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^43.4.1"
+  }
+}

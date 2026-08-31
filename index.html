@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Guide AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CIRCLE BUBBLE -->
+  <div id="bubble" class="bubble">
+    <div class="spark">✦</div>
+    <div class="text">GUIDE<br>AI</div>
+  </div>
+
+  <!-- RECTANGULAR PANEL -->
+  <div id="panel" class="panel hidden">
+    <div class="header">
+      <div class="left">
+        <span class="title">Guide AI</span>
+      </div>
+      <div class="right">
+        <button id="min-btn" class="win-btn" title="Minimize">−</button>
+        <button id="close-btn" class="win-btn close" title="Close">✕</button>
+      </div>
+    </div>
+
+    <!-- Chat History Area -->
+    <div id="chat-container" class="chat-container">
+      <div class="message ai-msg">
+        <div class="msg-text">Hello! I am your Guide AI. Ask me anything or attach up to 3 screenshots!</div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="bottom-section">
+      <!-- MULTI-FILE ATTACHMENT LIST -->
+      <div id="attachment-list" class="attachment-list"></div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Ask me anything..." id="user-input">
+        <button id="mic-btn" class="icon-action-btn" title="Voice Input">🎤</button>
+        <button id="send-btn" class="send-btn">➔</button>
+      </div>
+
+      <div class="footer">
+        <button id="screen-btn" class="pill">🖼️ Screenshot</button>
+        <button id="upload-btn" class="pill">➕ Upload Image</button>
+      </div>
+    </div>
+
+    <!-- IN-PANEL OVERLAY IMAGE VIEWER -->
+    <div id="image-viewer" class="image-viewer hidden">
+      <div class="viewer-header">
+        <span id="viewer-title">Image Preview</span>
+        <button id="viewer-close-btn" title="Close & Back to Chat">✕</button>
+      </div>
+      <div class="viewer-body">
+        <img id="viewer-img" src="" alt="Preview">
+      </div>
+    </div>
+
+    <!-- Resize Handle -->
+    <div class="resize-handle"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
