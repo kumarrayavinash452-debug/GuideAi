@@ -200,7 +200,7 @@ if (viewerCloseBtn) viewerCloseBtn.addEventListener("click", closeImageViewer);
 function getLocalResponse(userText, files) {
   const q = (userText || "").toLowerCase().trim();
   if (files.length > 0 && !q) return `📸 ${files.length} image(s) received! What should I explain or summarize for you?`;
-  if (q === "hello" || q === "hi" || q === "hii") return "Hello Avinash! 👋 I am Guide AI. How can I help you?";
+  if (q === "hello" || q === "hi" || q === "hii") return "Hello Eshwar! 👋 I am Guide AI. How can I help you?";
   if (q.includes("can you help me") || q === "help") return "Yes! Ask me anything or attach up to 3 screenshots.";
   if (q.includes("canva") && (q.includes("ppt") || q.includes("make") || q.includes("create"))) {
     return "🎨 **How to make PPT in Canva:**\n\n1) Open https://www.canva.com and log in.\n2) Click 'Create a design' ➔ 'Presentation (16:9)'.\n3) Choose a template and customize.\n4) Click Share ➔ Download (PDF / PPTX).\n\nAsk: *Can you give me direct link*";
